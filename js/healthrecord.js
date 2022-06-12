@@ -1,4 +1,9 @@
+
 let btnBack = document.querySelector('#btnBack');
+btnBack.addEventListener('click', ()=>{
+    location.href="patientinfo.html";
+
+})
 let healthRecord = []
 healthRecord = localStorage.getItem('PatientHealthRecord') ? JSON.parse(localStorage.getItem('PatientHealthRecord')):alert("No Record Found") ;
 
@@ -17,8 +22,5 @@ document.querySelector('#symptoms').value = healthRecord.symptoms;
 document.querySelector('#medicineList').value = healthRecord.medicineList;
 
 
-    btnBack.addEventListener('click', ()=>{
-        location.href="patientinfo.html";
-
-    })
+   
        
