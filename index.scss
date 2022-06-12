@@ -1,0 +1,219 @@
+body{
+    background-image: linear-gradient(skyblue  , blue);
+    height: 100vh;
+    :only-child{
+    background-image: linear-gradient(rgb(183, 231, 249)  , white,rgb(183, 231, 249));
+    border-radius: 2px;
+    }
+    button{
+        padding: 5px;
+        height: auto;
+        background-image: linear-gradient(rgb(183, 231, 249)  , rgb(23, 63, 195),rgb(183, 231, 249));
+        border: 1px solid black;
+        border-radius: 10%;
+        color: white;
+    }
+}
+
+
+.loginBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .log-in{
+        border: 2px solid black;
+        padding: 30px 50px;
+        display: grid;
+        width: 300px;
+
+        h3{
+            border-bottom: 3px double;
+        }
+        input{
+            margin: 15px 0px;
+            outline: none;        
+            border: none;    
+            border-bottom: 1px solid;
+        }
+
+        button{
+            margin-top: 30px;
+        }
+    }
+}
+
+.formBody{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    .myForm{
+        margin: 30px;
+        border: 2px solid;
+        padding: 30px;
+        div{
+            margin: 15px;
+        }
+
+        .header{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-bottom: 5px double;
+
+            button{
+                margin: 20px;
+                justify-self: end;
+                    width:60px;
+            }
+        }
+        .patientInfo{
+            margin: 0;
+            display:flex;
+            width: auto;
+            justify-content: space-between;
+
+            label{
+                margin-right: 5px;
+            }
+            input{
+                height: 20px;
+                width: 200px;
+            }
+        }
+        .address{
+            display: flex;
+            
+            width: auto;
+            input{
+                margin-left: 20px;
+                width: 100%;
+            }
+        }
+        .otherInfo{
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+        .medHistory{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            div{
+                display: grid;
+                grid-template-columns: 1fr 99fr;
+                label{
+                    width: 200px;
+                }
+            }
+        }
+        .symptoms{
+            display: grid;
+            grid-template-columns: 1fr 1fr 3fr;
+            select{
+                width: 200px;
+            }
+            input[type=text]{
+                width: 80%;
+            }
+        }
+        .buttons{
+            display: flex;
+            gap: 20px;
+            justify-content: end;
+        }
+    }
+}
+
+
+.form2Body{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    .myForm{
+        margin: 30px;
+        border: 2px solid;
+        padding: 30px;
+        div{
+            margin: 15px;
+        }
+
+        .header{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-bottom: 5px double;
+
+            button{
+                margin: 20px;
+                justify-self: end;
+                width:60px;
+            }
+        }
+        .patientInfo{
+            display:flex;
+            gap: 20px;
+            .age{
+                width: 10%;
+            }
+            div{
+                margin: 0;
+                display: flex;
+                width: 100%;
+                label{
+                    margin-right: 5px;
+                }
+                input{
+                    height: 20px;
+                    width: 100%;
+                }
+            }
+        }
+        .address,{
+            display: flex;
+            width: auto;
+            input{
+                margin-left: 20px;
+                width: 100%;
+            }
+        }
+        .otherInfo{
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+        .medHistory{
+            display: flex;
+            width: auto;
+            gap: 20px;
+                input{
+                    width: 88%;
+                    height: 20px;
+                }
+        }
+        .symptoms{
+            margin: 0;
+            display: grid;
+            width: 100%;
+            select{
+                width: 100%;
+            }
+            input[type=text]{
+                width: 100%;
+            }
+        }
+        .buttons{
+            display: flex;
+            gap: 20px;
+            justify-content: end;
+        }
+    }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="formBody">
+    <div>
+        <form id="myForm" class="myForm">
+            <div class="header">
+                <h3>Patient Health Record</h3>
+                <button type="button" name="btnLogout" id="btnLogout">Logout</button>
+                <hr>
+            </div>
+            <h4>Patient Information</h4>
+        
+            <div class="patientInfo">
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName">
+                </div>  
+                <div>
+                    <label for="middleName">Middle Name</label>
+                    <input type="text" name="middleName" id="middleName">
+                </div>
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName">
+                </div>
+            </div>
+            <div class="address">
+                <label for="address">Address:</label>
+                <input type="text" name="address" id="address">
+            </div>
+            <div class="otherInfo">
+                <div>
+                    <label for="gender">Gender</label>
+                    <input type="radio" name="gender" id="gender" value="Male">Male
+                    <input type="radio" name="gender" id="gender" value="Female">Female
+                </div>
+                <div>
+                    <label for="birthDay">Birth Day</label>
+                    <input type="date" name="birthDay" id="birthDay">
+                </div>
+                <div>
+                    <label for="mobileNumber">Mobile Number:</label>
+                    <input type="number" name="mobileNumber" id="mobileNumber" >
+                </div>
+            </div>
+            <hr>
+        
+            <div class="medHistory">
+                    <label for="medHistory">Medical History</label>
+                <div>
+                    <input type="checkbox" name="medHistory" id="medHistory" value="Dsychiatric Disorder">Psychiatric Disorder
+                    <input type="checkbox" name="medHistory" id="medHistory" value="Asthma">Asthma
+                    <input type="checkbox" name="medHistory" id="medHistory" value="Hypertension">Hypertension
+                    <input type="checkbox" name="medHistory" id="medHistory" value="Cancer">Cancer
+                </div>
+                <div>
+                    <input type="checkbox" name="medHistory" id="medHistory" value="Epilepsy">Epilepsy
+                    <input type="checkbox" name="medHistory" id="medHistory" value="Diabetes">Diabetes
+                    <input type="checkbox" name="medHistory" id="medHistory" value="Cardiac Disease">Cardiac Disease
+                    <input type="checkbox" name="medHistory" id="medHistory" value="Others">Others
+                </div>
+            </div>
+            <hr>
+            <div class="symptoms">
+                <div>
+                    <label for="symptoms">Current Symptoms</label>
+        
+                </div>
+                <div>
+                    <select name="symptoms" id="symptoms" multiple>
+                        <option value="Chest Pain">Chest Pain</option>
+                        <option value="Respiratory">Respiratory</option>
+                        <option value="Hematologic">Hematologic</option>
+                        <option value="Lympathic">Lympathic</option>
+                        <option value="Neurological ">Neurological</option>
+                    </select>
+                </div>
+                <div class="meds">
+                    <div>
+                        <label for="medicine">Are you currently taking a medication?</label>
+                        <input type="radio" name="medicine" id="medicine" value="yes">Yes
+                        <input type="radio" name="medicine" id="medicine" value="no" checked>No
+                    </div>
+                    <div>
+                        <input type="text" name="medicineList" id="medicineList"  disabled>
+                    </div>
+                </div>
+            </div>
+            
+            <hr>
+        
+            <div class="buttons">
+                <button type="button" name="btnShow" id="btnShow">Show Record</button>
+                <button type="button" name="btnSubmit" id="btnSubmit">Submit</button>
+                <button type="button" name="btnReset" id="btnReset">Reset</button>
+            </div>
+        
+        
+            <script src="js/patientinfo.js">
+        
+            </script>
+        </form>
+    </div>
+</body>
+</html>
