@@ -5,21 +5,33 @@ btnBack.addEventListener('click', ()=>{
 
 })
 let healthRecord = []
-healthRecord = localStorage.getItem('PatientHealthRecord') ? JSON.parse(localStorage.getItem('PatientHealthRecord')):alert("No Record Found") ;
+healthRecord = localStorage.getItem('PatientHealthRecord');
+if(healthRecord){
+    healthRecord = JSON.parse(localStorage.getItem('PatientHealthRecord')) ;
+    setRecord();
+}
+else{
+    alert("No Record Found") ;
+}
+
 
 var form= document.querySelector('#myForm');
 for(var i=0;i<form.length;i++){
     form.elements[i].readOnly = true;
 }
-document.querySelector('#fullName').value = healthRecord.fullName;
-document.querySelector('#age').value = healthRecord.age;
-document.querySelector('#gender').value = healthRecord.gender;
-document.querySelector('#birthDay').value = healthRecord.birthDay;
-document.querySelector('#address').value = healthRecord.address;
-document.querySelector('#mobileNumber').value = healthRecord.mobileNumber;
-document.querySelector('#medHistory').value = healthRecord.medHistory;
-document.querySelector('#symptoms').value = healthRecord.symptoms;
-document.querySelector('#medicineList').value = healthRecord.medicineList;
+
+function setRecord(){
+    document.querySelector('#fullName').value = healthRecord.fullName;
+    document.querySelector('#age').value = healthRecord.age;
+    document.querySelector('#gender').value = healthRecord.gender;
+    document.querySelector('#birthDay').value = healthRecord.birthDay;
+    document.querySelector('#address').value = healthRecord.address;
+    document.querySelector('#mobileNumber').value = healthRecord.mobileNumber;
+    document.querySelector('#medHistory').value = healthRecord.medHistory;
+    document.querySelector('#symptoms').value = healthRecord.symptoms;
+    document.querySelector('#medicineList').value = healthRecord.medicineList;
+}
+
 
 
    
